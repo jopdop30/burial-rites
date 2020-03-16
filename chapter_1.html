@@ -1,107 +1,50 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0px;
-    }
-    html {
-      height: 100%;
-      background-image: linear-gradient(to right top, #10bbd5, #00b0db, #15a4dd, #3e96db, #5d87d4, #717bcb, #826ebe, #9061af, #9a559f, #a1488e, #a63c7b, #a73067);
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-    h1 {
-      color: #FFFFFF;
-      font-family: 'Spartan', sans-serif;
-      text-shadow: -2px 2px 10px #000000;
-    }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #00364D;
-  width: 100%;
-  box-shadow: -2px 2px 10px #000000;
-}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <style>
+ </style>
+ </head>
+ <body>
+ 
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <a class="navbar-brand" href="/">Retief Reads: Burial Rites</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-li {
-  float: left;
-  font-family: 'Spartan', sans-serif;
-  color: #FFFFFF;
-  text-shadow: -2px 2px 10px #000000;
-}
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Chapters
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/prologue">Prologue</a>
+          <a class="dropdown-item active" href="/chapter_1">Chapter 1</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">View All</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: #00718A;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  text-shadow: none;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  text-shadow: none;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-#toptitle a:hover {
-  background-color: #00364D;
-    }
-  </style>
-  
-  </head>
-<body>
-<ul>
-  <li><a href="/">Home</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Chapters</a>
-    <div class="dropdown-content">
-      <a href="/prologue">Prologue</a>
-      <a href="#top">Chapter 1</a>
-    </div>
-  </li>
-  <li id="toptitle" style="float:right;"><a href="/">Retief Reads: Burial Rites</a></li>
-</ul>
-  
-<h1>Chapter 1</h1>
-<iframe width="50%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/776365066&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-  <h1>Part 2 of Chapter 1 is coming soon</h1>
-<script>
-  $("a[href='#top']").click(function() {
-  $("html, body").animate({ scrollTop: 0 }, "slow");
-  return false;
-});
-  </script>
-  
-</body>
+   <div class="container">
+   <h1 class="display-2">Chapter 1</h1>
+     <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/776365066&color=%23d1d1d1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+   </div>
+   
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <script>
+     $enable-shadows
+   </script>
+ </body>
 </html>
