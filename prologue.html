@@ -38,10 +38,16 @@
    <div class="container">
    <h1 class="display-2">Prologue</h1>
      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/776362747&color=%23d1d1d1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-    <ul>
-    <li><a href="#" class="btn btn-outline-primary btn-lg disabled" role="button" aria-pressed="true">&laquo; Previous</a></li>
-    <li><a href="/chapter_1" class="btn btn-outline-primary btn-lg" role="button" aria-pressed="true">Next &raquo;</a>
-   </ul>
+    <nav aria-label="previous and next buttons">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="/chapter_1">Next</a>
+    </li>
+  </ul>
+</nav>
    </div>
      
    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
